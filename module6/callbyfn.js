@@ -4,7 +4,7 @@ function FirstName(fstnme, clbfn){
     clbfn('Singh')
 }
 
-FirstName('Satyam' , LastName)
+FirstName('Satyam' , LastName) //Callback
 
 
 function LastName(lstnm){
