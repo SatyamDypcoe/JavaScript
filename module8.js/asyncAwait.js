@@ -17,10 +17,15 @@ function processOrder(order){
 }
 
 async function serveOrder(){
+    try{
     let orderPlaced = await placeOrder('coffee')
     console.log(orderPlaced)
     let processedOrder = await processOrder(orderPlaced)
     console.log(processedOrder)
+    }
+    catch(err){
+        console.log(err)
+    }
 }
 
 serveOrder()
