@@ -23,4 +23,7 @@ placeOrder('coffee').then(function(orderPlaced){
     return orderIsProcessed
 }).then(function(processedOrder){
     console.log(processedOrder)
+}).catch(function(err){
+    console.log(err)
 })
+// chaining of promiseS
